@@ -1,0 +1,30 @@
+Programa 1 → Laço 1 + Laço 2
+Soma acumulativa (dependente) = 2499999975000000.00
+
+O0
+real    0m1.680s
+user    0m1.083s
+sys     0m0.577s
+
+O2
+real    0m0.939s
+user    0m0.400s
+sys     0m0.530s
+
+real    0m0.611s
+user    0m0.150s
+sys     0m0.449s
+
+Programa 2 → Laço 1 + Laço 3
+
+real    0m0.981s
+user    0m0.430s
+sys     0m0.540s
+
+real    0m0.722s
+user    0m0.143s
+sys     0m0.571s
+
+real    0m0.516s
+user    0m0.142s
+sys     0m0.362s
