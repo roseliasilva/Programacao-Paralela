@@ -1,0 +1,7 @@
+PI = 3.14159265359
+Iterações: 1000 | Aproximação: 3.140592653839794 | Tempo: 0.000003 s
+Iterações: 10000 | Aproximação: 3.141492653590034 | Tempo: 0.000021 s
+Iterações: 100000 | Aproximação: 3.141582653589720 | Tempo: 0.000209 s
+Iterações: 1000000 | Aproximação: 3.141591653589774 | Tempo: 0.002571 s
+Iterações: 10000000 | Aproximação: 3.141592553589792 | Tempo: 0.022150 s
+Iterações: 100000000 | Aproximação: 3.141592643589326 | Tempo: 0.200006 s
