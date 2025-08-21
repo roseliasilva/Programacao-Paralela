@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 
 # Dados fornecidos
 N = [10, 100, 500, 1000, 2000, 3000]
