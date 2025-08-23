@@ -17,16 +17,20 @@ int main() {
     }
 
     // 3) Soma quebrando dependência
-    double soma1 = 0.0, soma2 = 0.0, soma3 = 0.0, soma4 = 0.0;
+    double soma1 = 0.0, soma2 = 0.0, soma3 = 0.0, soma4 = 0.0, soma5 = 0.0, soma6 = 0.0, soma7 = 0.0, soma8 = 0.0;
     for (long i = 0; i < N; i += 4) {
         soma1 += vetor[i];
         soma2 += vetor[i+1];
         soma3 += vetor[i+2];
         soma4 += vetor[i+3];
+        soma5 += vetor[i+4];
+        soma6 += vetor[i+5];
+        soma7 += vetor[i+6];
+        soma8 += vetor[i+7];
     }
-    double soma_final = soma1 + soma2 + soma3 + soma4;
+    double soma_final = soma1 + soma2 + soma3 + soma4 + soma5 + soma6 + soma7 + soma8;
 
-    printf("Soma quebrando dependência = %.2f\n", soma_final);
+    printf("var 8 Soma quebrando dependência = %.2f\n", soma_final);
 
     free(vetor);
     return 0;
