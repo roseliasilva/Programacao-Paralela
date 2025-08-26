@@ -2,7 +2,7 @@
 #include <math.h>
 #include <omp.h>
 
-#define N 50000000  // 50 milhões (ajuste se ficar muito lento)
+#define N 50000000  // 50 milhões
 
 int main() {
     double *a, result = 0.0;
@@ -16,7 +16,7 @@ int main() {
     double start = omp_get_wtime();
 
     // Cálculo pesado (compute-bound)
-    #pragma omp parallel for reduction(+:result)
+    #pragma omp parallel for
     for (long i = 0; i < N; i++) {
         result += sin(a[i]) * cos(a[i]) + sqrt(a[i]);
     }
