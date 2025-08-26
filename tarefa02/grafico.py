@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt # type: ignore
 
 programa1 = {"O0": 0.631, "O2": 0.452, "O3": 0.444}
 programa2_2vars = {"O0": 0.532, "O2": 0.432, "O3": 0.396}
