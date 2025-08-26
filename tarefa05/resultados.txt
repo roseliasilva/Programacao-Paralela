@@ -1,0 +1,39 @@
+primos.c:
+
+Tempo sequencial: 0.134770 segundos
+Sequencial: Encontrados 78498 primos até 1000000
+Tempo paralelo: 0.087087 segundos
+Paralelo:   Encontrados 70534 primos até 1000000
+-----------------------------------------------------
+
+sequencial.c
+
+Sequencial: Encontrados 9592 primos até 100000
+
+real    0m0.024s
+user    0m0.012s
+sys     0m0.001s
+-----------------------------------------------------
+
+Paralelo: Encontrados 8543 primos até 100000
+
+real    0m0.063s
+user    0m0.144s
+sys     0m0.018s
+
+
+==================================================================
+PROGRAMAS SEPARADOS - sequencial.c e paralelo.c
+Tempo sequencial: 1.894751 segundos
+Sequencial: Encontrados 664579 primos até 10000000
+
+Tempo paralelo: 0.578025 segundos
+Paralelo: Encontrados 653107 primos até 10000000
+
+==================================================================
+PROGRAMA JUNTO - primos.c
+Sequencial: Encontrados 664579 primos até 10000000
+Tempo sequencial: 2.019187 segundos
+
+Paralelo:   Encontrados 664579 primos até 10000000
+Tempo paralelo: 0.641323 segundos
