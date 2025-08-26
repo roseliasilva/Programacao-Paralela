@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 100000000  // tamanho do vetor
+#define N 100000000
 
 int main() {
     double *vetor = (double*) malloc(N * sizeof(double));

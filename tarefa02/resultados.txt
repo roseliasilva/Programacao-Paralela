@@ -1,57 +1,25 @@
 Teste 23/08
 
 Programa 1 → Laço 1 + Laço 2
-real    0m0.631s
-user    0m0.322s
-sys     0m0.302s
-
-real    0m0.380s
-user    0m0.080s
-sys     0m0.291s
-
-real    0m0.371s
-user    0m0.081s
-sys     0m0.284s
--------------------------------------------
+O0 - real    0m0.631s 
+O2 - real    0m0.452s 
+O3 - real    0m0.444s
+----------------------
 
 Programa 2 → Laço 1 + Laço 3
 2 variáveis
-real    0m0.532s
-user    0m0.234s
-sys     0m0.295s
-
-real    0m0.432s
-user    0m0.090s
-sys     0m0.340s
-
-real    0m0.396s
-user    0m0.090s
-sys     0m0.300s
+O0 - real    0m0.532s 
+O2 - real    0m0.432s 
+O3 - real    0m0.396s 
 ----------------------
 
 4 variáveis
-real    0m0.485s
-user    0m0.217s
-sys     0m0.247s
-
-real    0m0.332s
-user    0m0.081s
-sys     0m0.243s
-
-real    0m0.330s
-user    0m0.080s
-sys     0m0.240s
------------------------
+O0 - real    0m0.485s 
+O2 - real    0m0.332s 
+O3 - real    0m0.330s 
+----------------------
 
 8 variáveis
-real    0m0.489s
-user    0m0.269s
-sys     0m0.210s
-
-real    0m0.376s
-user    0m0.120s
-sys     0m0.250s
-
-real    0m0.370s
-user    0m0.100s
-sys     0m0.261s
+O0 - real    0m0.489s 
+O2 - real    0m0.376s 
+O3 - real    0m0.370s 

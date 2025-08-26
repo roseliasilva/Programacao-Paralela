@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 100000000  // tamanho do vetor
+#define N 100000000
 
 int main() {
     double *vetor = (double*) malloc(N * sizeof(double));
@@ -30,7 +30,7 @@ int main() {
     }
     double soma_final = soma1 + soma2 + soma3 + soma4 + soma5 + soma6 + soma7 + soma8;
 
-    printf("var 8 Soma quebrando dependência = %.2f\n", soma_final);
+    printf("Soma quebrando dependência = %.2f\n", soma_final);
 
     free(vetor);
     return 0;
