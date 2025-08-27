@@ -3,7 +3,6 @@
 #include <sys/time.h>
 
 int main() {
-    // diferentes números de iterações para testar
     long long iteracoes[] = {1000, 10000, 100000, 1000000, 10000000, 100000000};
     int num_testes = sizeof(iteracoes) / sizeof(iteracoes[0]);
 
@@ -19,10 +18,10 @@ int main() {
 
         for (long long k = 0; k < n; k++) {
             pi += sinal * (1.0 / (2 * k + 1));
-            sinal = -sinal; // alterna sinal
+            sinal = -sinal;
         }
 
-        pi *= 4.0; // ajusta para π
+        pi *= 4.0;
 
         gettimeofday(&fim, NULL);
 
