@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define N 100000000  // 100 milhões
+#define N 300000000  // 100 milhões
 
 int main() {
     double *a, *b, *c;

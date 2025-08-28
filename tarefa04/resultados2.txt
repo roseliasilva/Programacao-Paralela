@@ -1,0 +1,91 @@
+=========================================
+INICIANDO TESTE: Memory-Bound
+=========================================
+
+--- Executando com 1 thread(s) ---
+Soma total (para evitar otimização do compilador): 4950000000
+
+real    0m1.565s
+user    0m1.364s
+sys     0m0.226s
+
+--- Executando com 2 thread(s) ---
+Soma total (para evitar otimização do compilador): 4320240634
+
+real    0m1.119s
+user    0m1.961s
+sys     0m0.081s
+
+--- Executando com 4 thread(s) ---
+Soma total (para evitar otimização do compilador): 3038016421
+
+real    0m1.096s
+user    0m3.565s
+sys     0m0.092s
+
+--- Executando com 8 thread(s) ---
+Soma total (para evitar otimização do compilador): 920233181
+
+real    0m1.028s
+user    0m6.732s
+sys     0m0.051s
+
+--- Executando com 12 thread(s) ---
+Soma total (para evitar otimização do compilador): 804662117
+
+real    0m1.011s
+user    0m8.920s
+sys     0m0.081s
+
+--- Executando com 16 thread(s) ---
+Soma total (para evitar otimização do compilador): 606674054
+
+real    0m1.073s
+user    0m9.876s
+sys     0m0.102s
+
+=========================================
+INICIANDO TESTE: Compute-Bound
+=========================================
+
+--- Executando com 1 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97633.960195
+
+real    0m4.643s
+user    0m4.739s
+sys     0m0.000s
+
+--- Executando com 2 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97633.960195
+
+real    0m2.480s
+user    0m5.046s
+sys     0m0.000s
+
+--- Executando com 4 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97618.338761
+
+real    0m1.580s
+user    0m6.343s
+sys     0m0.000s
+
+--- Executando com 8 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97606.622686
+
+real    0m1.077s
+user    0m8.330s
+sys     0m0.000s
+
+--- Executando com 12 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97606.622686
+
+real    0m0.877s
+user    0m9.865s
+sys     0m0.000s
+
+--- Executando com 16 thread(s) ---
+Resultado final (para evitar otimização do compilador): 97610.528044
+
+real    0m0.882s
+user    0m9.590s
+sys     0m0.021s
