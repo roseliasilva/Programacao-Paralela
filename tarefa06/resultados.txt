@@ -1,34 +1,3 @@
-p1.c:
-
-Estimativa (incorreta) de pi: 3.121347
-Tempo de execução (gettimeofday): 27.099773 segundos
-------------------------------------------------------
-
-p2.c:
---- Versão 1: #pragma omp critical ---
-Estimativa (correta) de pi: 0.934703
-Tempo de execução: 2.206175 segundos
-
-============================================================
-04/09
-ernane.c
-✅ Case 1 - Sequential:      π ≈ 3.141130314113032 | Time: 0.367s
-❌ Case 2 - Parallel for:    π ≈ 3.122800712280071 | Time: 31.215s (race condition)
-✅ Case 3 - Critical:        π ≈ 3.141864714186471 | Time: 37.463s (idleness)
-✅ Case 4 - Private:         π ≈ 3.141063914106391 | Time: 28.523s
-✅ Case 5 - Firstprivate:    π ≈ 3.142073114207312 | Time: 0.121s
-✅ Case 6 - Lastprivate:     π ≈ 3.141496714149671 | Time: 28.942s | Last i: 9999998
-✅ Case 7 - Default(none):   π ≈ 3.141617114161711 | Time: 0.201s
-
-✅ Case 1 - Sequential:      π ≈ 3.141130314113032 | Time: 0.260s
-❌ Case 2 - Parallel for:    π ≈ 3.122035112203511 | Time: 24.117s (race condition)
-✅ Case 3 - Critical:        π ≈ 3.141942714194272 | Time: 31.298s (idleness)
-✅ Case 4 - Private:         π ≈ 3.141650314165032 | Time: 25.018s
-✅ Case 5 - Firstprivate:    π ≈ 3.140376314037631 | Time: 0.091s
-✅ Case 6 - Lastprivate:     π ≈ 3.141593114159311 | Time: 25.668s | Last i: 9999998
-✅ Case 7 - Default(none):   π ≈ 3.140725914072592 | Time: 0.134s
-
-novo.c
 π ≈ 3.141592653589793
 Estimativas:
 
