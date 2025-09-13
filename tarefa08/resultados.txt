@@ -1,0 +1,4 @@
+Versão 1 - critical + rand():     π ≈ 3.141214 | Time: 2.378044 segundos
+Versão 2 - array + rand():        π ≈ 3.141704 | Time: 2.512394 segundos
+Versão 3 - critical + rand_r():   π ≈ 3.142415 | Time: 0.017340 segundos
+Versão 4 - array + rand_r():      π ≈ 3.142100 | Time: 0.100079 segundos
