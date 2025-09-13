@@ -1,0 +1,30 @@
+Primeira Execução:
+Arquivo: arquivo_01.txt, processado pela thread 11
+Arquivo: arquivo_02.txt, processado pela thread 10
+Arquivo: arquivo_05.txt, processado pela thread 1
+Arquivo: arquivo_06.txt, processado pela thread 7
+Arquivo: arquivo_07.txt, processado pela thread 3
+Arquivo: arquivo_03.txt, processado pela thread 9
+Arquivo: arquivo_04.txt, processado pela thread 6
+
+Segunda Execução:
+Arquivo: arquivo_01.txt, processado pela thread 0
+Arquivo: arquivo_07.txt, processado pela thread 11
+Arquivo: arquivo_03.txt, processado pela thread 2
+Arquivo: arquivo_02.txt, processado pela thread 3
+Arquivo: arquivo_04.txt, processado pela thread 1
+Arquivo: arquivo_05.txt, processado pela thread 9
+Arquivo: arquivo_06.txt, processado pela thread 4
+
+Terceira Execução:
+Arquivo: arquivo_01.txt, processado pela thread 1
+Arquivo: arquivo_06.txt, processado pela thread 11
+Arquivo: arquivo_07.txt, processado pela thread 1
+Arquivo: arquivo_05.txt, processado pela thread 5
+Arquivo: arquivo_03.txt, processado pela thread 9
+Arquivo: arquivo_02.txt, processado pela thread 2
+Arquivo: arquivo_04.txt, processado pela thread 10
+
+
+
+
