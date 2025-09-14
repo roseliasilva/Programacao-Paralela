@@ -1,0 +1,12 @@
+==== CRITICAL NOMEADO (duas listas, OpenMP tasks) ====
+[Método Critical Nomeado] Lista 1: 48 -> 54 -> 24 -> 94 -> 7 -> 25 -> NULL
+[Método Critical Nomeado] Lista 2: 77 -> 36 -> 71 -> 65 -> NULL
+
+==== LOCKS EXPLÍCITOS (M listas, OpenMP tasks + locks) ====
+Quantidade de listas (M, até 10): 5
+Quantidade de inserções (N): 30
+[Método Locks Explícitos] Lista 0: 576 -> 517 -> 517 -> 576 -> 354 -> 177 -> 177 -> 465 -> NULL
+[Método Locks Explícitos] Lista 1: 747 -> 853 -> 524 -> NULL
+[Método Locks Explícitos] Lista 2: 659 -> 659 -> 565 -> 248 -> 765 -> NULL
+[Método Locks Explícitos] Lista 3: 418 -> 571 -> 324 -> 988 -> 988 -> 418 -> 418 -> 571 -> 477 -> 477 -> NULL
+[Método Locks Explícitos] Lista 4: 241 -> 406 -> 241 -> 623 -> NULL
