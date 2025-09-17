@@ -1,0 +1,30 @@
+== Monte Carlo π Estimation with OpenMP ==
+
+🟢 [v1] critical + local count + rand_r():        π ≈ 3.141787914178791 | Time: 0.052s
+🔵 [v2] atomic + local count + rand_r():          π ≈ 3.141787914178791 | Time: 0.046s
+🟣 [v3] reduction(+:count) + rand_r():            π ≈ 3.141787914178791 | Time: 0.053s
+🔻 [v4] worst: atomic per hit + rand_r():         π ≈ 3.141787914178791 | Time: 0.595s
+🔻 [v5] worst: critical per hit + rand_r():       π ≈ 3.141787914178791 | Time: 4.280s
+===========================================================================================
+
+Comparando 5 versões com 100000000 pontos.
+
+1. Comp. Critical: π ≈ 1.462191 | Time: 5.376916 s
+2. Comp. Atomic:   π ≈ 3.553738 | Time: 5.341294 s
+3. Priv. Critical: π ≈ 3.141243 | Time: 0.207054 s
+4. Priv. Atomic:   π ≈ 3.141243 | Time: 0.226466 s
+5. Reduction:      π ≈ 3.666667 | Time: 0.288057 s
+
+Fim da execução.
+===========================================================================================
+PROVAVELMENTE ESSA
+
+Comparando 5 versões com 100000000 pontos.
+
+1. Comp. Critical: π ≈ 3.141707 | Time: 47.481081 s
+2. Comp. Atomic:   π ≈ 3.141388 | Time: 5.876946 s
+3. Priv. Critical: π ≈ 3.141607 | Time: 0.258147 s
+4. Priv. Atomic:   π ≈ 3.141614 | Time: 0.265687 s
+5. Reduction:      π ≈ 3.141846 | Time: 0.255684 s
+
+Fim da execução.
