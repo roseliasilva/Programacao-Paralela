@@ -1,0 +1,27 @@
+Saídas para o programa paralelo.c variando o chunksize
+
+Static:
+chunksize 1 - 1.163663
+chunksize 2 - 1.318709
+chunksize 4 - 1.153694
+chunksize 8 - 1.164876
+chunksize 12 - 1.133555
+
+Dynamic:
+chunksize 1 - 4.664770
+chunksize 2 - 3.313083
+chunksize 4 - 1.862443
+chunksize 8 - 1.073259
+chunksize 12 - 0.963978
+
+Guided:
+chunksize 1 - 0.973610
+chunksize 2 - 0.976759
+chunksize 4 - 1.028464
+chunksize 8 - 1.033438
+chunksize 12 - 1.061039
+
+Chunksize Padrão (sem ser definido):
+Static - 1.157996
+Dynamic - 4.883344
+Guided - 0.930964
