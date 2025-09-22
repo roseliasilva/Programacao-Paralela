@@ -7,7 +7,6 @@
 #include <unistd.h>
 
 // Total de pontos a serem gerados
-// Use um número alto para que a contenção se torne um gargalo visível
 #define NUM_PONTOS 100000000
 
 // Função para calcular o tempo decorrido em segundos
@@ -23,7 +22,6 @@ void versao1_compartilhado_critical() {
 
     #pragma omp parallel
     {
-        // Cada thread precisa de sua própria semente para rand_r
         unsigned int seed = time(NULL) ^ omp_get_thread_num();
 
         #pragma omp for
@@ -50,7 +48,6 @@ void versao2_compartilhado_atomic() {
 
     #pragma omp parallel
     {
-        // Cada thread precisa de sua própria semente para rand_r
         unsigned int seed = time(NULL) ^ omp_get_thread_num();
 
         #pragma omp for
@@ -88,8 +85,7 @@ void versao3_privado_critical() {
                 acertos_privado++;
             }
         }
-        // Padrão: Contador Privado.
-        // A sincronização ocorre apenas UMA VEZ por thread. Contenção mínima.
+        
         #pragma omp critical
         total_acertos += acertos_privado;
     }
@@ -117,8 +113,7 @@ void versao4_privado_atomic() {
                 acertos_privado++;
             }
         }
-        // Padrão: Contador Privado.
-        // A sincronização ocorre apenas UMA VEZ por thread. Contenção mínima.
+        
         #pragma omp atomic
         total_acertos += acertos_privado;
     }
@@ -132,9 +127,7 @@ void versao5_reduction() {
     struct timeval start, end;
     gettimeofday(&start, NULL);
     int count = 0;
-
-    // Padrão: Contador Privado (automatizado pelo OpenMP).
-    // O OpenMP gerencia a criação das variáveis privadas e a soma final (redução).
+    
     #pragma omp parallel reduction(+:count)
     {
         unsigned int seed = time(NULL) ^ omp_get_thread_num();
