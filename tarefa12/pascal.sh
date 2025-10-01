@@ -3,7 +3,7 @@
 #SBATCH --time=1-2:03
 #SBATCH --cpus-per-task=64
 #SBATCH --exclusive
-#SBATCH --partition=intel-128
+#SBATCH --partition=amd-512
 
 export OMP_NUM_THREADS=64
 
