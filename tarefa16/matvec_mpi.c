@@ -2,18 +2,6 @@
 #include <stdlib.h>
 #include <mpi.h>
 
-/*
- ============================================================================
- Código MPI para multiplicação Matriz-Vetor (y = A * x)
- 
- Compilação:
-   mpicc -O3 -o matvec_mpi matvec_mpi.c
- 
- Execução:
-   mpirun -np <num_procs> ./matvec_mpi <linhas_M> <colunas_N>
- ============================================================================
-*/
-
 int main(int argc, char** argv) {
     MPI_Init(&argc, &argv);
 
